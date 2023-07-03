@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0.2px 0px 10px 0px;
+            padding: 0%;
+
+        }
+
+        body {
+            background-color: rgb(43, 40, 40);
+        }
+
+        .navigation {
+            display: flex;
+
+            background-color: rgb(7, 7, 7);
+            clip-path: polygon(0% 0%, 100% 0, 100% 25%, 100% 100%, 0 60%);
+        }
+
+        .nav ul {
+            margin-left: 750px;
+            gap: 30px;
+            display: flex;
+        }
+
+        a {
+            display: flex;
+            font-size: x-large;
+            color: crimson;
+        }
+
+        a:hover {
+            font-size: xx-large;
+            font-style: italic;
+            color: cyan;
+        }
+
+        span {
+            color: red;
+        }
+
+        span:hover {
+            color: black;
+        }
+
+        .logo {
+            margin-left: 40px;
+        }
+
+        .logo:hover {
+            font-size: x-large;
+            font-style: italic;
+            color: red;
+        }
+
+        .FULL {
+            display: flex;
+        }
+
+        .contact {
+            margin-top: 80px;
+            display: flex;
+            margin-left: 400px;
+            gap: 30px;
+        }
+
+        .pic img {
+            border-radius: 9%;
+            margin-right: 50px;
+            margin-top: 20px;
+            margin-left: 20px;
+            height: 630px;
+            width: 500px;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+
+        }
+
+        button {
+            margin-top: 50px;
+            color: aliceblue;
+            background-color: orangered;
+            border-radius: 40%;
+            border-style: hidden;
+            font-size: x-large;
+        }
+
+        button:hover {
+            background-color: skyblue;
+            color: red;
+            font-size: xx-large;
+            transform: rotatey(30deg);
+        }
+
+        .content {
+            margin: 60px 0px 0px 50px;
+            text-align: center;
+            color: whitesmoke;
+            font-size: x-large;
+        }
+
+        .content p {
+            font-size: xx-large;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navigation">
+        <div class="logo">
+            <h1><span>AR</span>PAN <span>.</span></h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href=""> skills </a></li>
+                <li><a href=""> Education </a></li>
+                <li><a href=""> Experience</a></li>
+                <li><a href=""> Projects </a></li>
+                <li><a href=""> Contact </a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="FULL">
+
+        <div class="contain">
+
+            <!-- About Me -->
+            <div class="content">
+                <h2>About Me</h2>
+                <p>I am a college student currently pursuing B.Tech in Computer Science Engineering with a
+                    specialization in Artificial Inteligence and machine Learning . I have been continuously enhancing
+                    on capabilities through the process of learning and to take an effective interest in the growth of
+                    my knowledge in the modern technologies that coincides with my interest to the best of my abilities"
+                </p>
+            </div>
+            <!-- End About -->
+            
+            <!-- Button -->
+            <div class="button">
+                <div class="button1"><button style="width: 200px; height: 50px;">Get in touch</button></div>
+                <div class="button2"><button style="width: 150px; height: 50px;">MY CV</button></div>
+            </div>
+            <!-- Over -->
+            <!-- FOOTER -->
+            <div class="contact">
+                <a href="https://github.com/Arpan-basu"><img src="./icons8-github-50.png" alt="github"></a>
+                <!-- <a href="arpanbasu2002@gmail.com"><img src="./icons8-mail-24.png" alt="MAIL" style="width: 50px;"></a> -->
+                <a href="https://www.linkedin.com/in/arpan-basu-533252221/"><img src="./icons8-linkedin-logo-48.png" alt="Linkedin"></a>
+            </div>
+            <!-- End Footer -->
+        </div>
+        <div class="pic">
+            <img src="./me5.jpg" alt="">
+        </div>
+
+    </div>
+
+</body>
+
+</html>
