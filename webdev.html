@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0%;
+            /* background-color: rgb(43, 40, 40); */
+        }
+
+        .card {
+            height: 650px;
+            width: 55%;
+            /* margin-top: 50px; */
+            margin-left: 400px;
+            background-color: antiquewhite;
+            border-radius: 10%;
+        }
+
+        .c {
+            /* margin-top: 50px; */
+            display: flex;
+            margin-left: 100px;
+            gap: 250px;
+        }
+
+        .c3{
+            margin-left: 330px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .navigation {
+            display: flex;
+
+            background-color: rgb(7, 7, 7);
+            clip-path: polygon(0% 0%, 100% 0, 100% 25%, 100% 100%, 0 60%);
+        }
+
+        .nav ul {
+            margin-bottom: 50px;
+            margin-top: 30px;
+            margin-left: 750px;
+            gap: 30px;
+            display: flex;
+        }
+
+        a {
+            display: flex;
+            font-size: x-large;
+            color: crimson;
+        }
+
+        a:hover {
+            font-size: xx-large;
+            font-style: italic;
+            color: cyan;
+        }
+
+        span {
+            color: red;
+        }
+
+        span:hover {
+            color: rgb(22, 171, 171);
+        }
+
+        .logo {
+            margin-left: 40px;
+            margin-bottom: 20px;
+        }
+
+        .logo:hover {
+            font-size: x-large;
+            font-style: italic;
+            color: red;
+        }
+
+        img{
+            height: 200px;
+            width:  200px;
+        }
+
+        hr{
+            margin-top: 50px;
+            /* width: 5px; */
+            height: 15px;
+            background-color: red;
+        }
+
+        .tab{
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        button {
+            margin-top: 50px;
+            color: aliceblue;
+            background-color: orangered;
+            /* border-radius: 40%; */
+            border-style: hidden;
+            font-size: x-large;
+            width: 200px;
+        }
+
+        button:hover {
+            background-color: skyblue;
+            color: red;
+            font-size: xx-large;
+            transform: rotatey(30deg);
+        }
+
+        p{
+            color: wheat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="logo">
+            <h1><span>AR</span>PAN <span>.</span></h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href=""> skills </a></li>
+                <li><a href=""> Education </a></li>
+                <li><a href=""> Experience</a></li>
+                <li><a href=""> Projects </a></li>
+                <li><a href=""> Contact </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="c">
+            <div class="c1">
+                <img src="./img/HTML.jpg" alt="">
+            </div>
+            <div class="c2">
+                <img src="./img/css.png" alt="">
+            </div>
+        </div>
+        <div class="c3">
+            <img src="./img/js.png" alt="">
+        </div>
+        <div class="c">
+            <div class="c1">
+                <img src="./img/sql.png" alt="">
+            </div>
+            <div class="c2">
+                <img src="./img/php.png" alt="">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="tab">
+        <div class="tab1"><button>Basics    </button></div>
+        <div class="tab2"><button>Clone     </button></div>
+        <div class="tab3"><button>Full-Stack</button></div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>
