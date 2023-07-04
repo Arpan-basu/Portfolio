@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0.2px 0px 10px 0px;
+            padding: 0%;
+
+        }
+
+        body {
+            background-color: rgb(43, 40, 40);
+        }
+
+        .navigation {
+            display: flex;
+
+            background-color: rgb(7, 7, 7);
+            clip-path: polygon(0% 0%, 100% 0, 100% 25%, 100% 100%, 0 60%);
+        }
+
+        .nav ul {
+            margin-top: 30px;
+            margin-left: 750px;
+            gap: 30px;
+            display: flex;
+        }
+
+        a {
+            display: flex;
+            font-size: x-large;
+            color: crimson;
+        }
+
+        a:hover {
+            font-size: xx-large;
+            font-style: italic;
+            color: cyan;
+        }
+
+        span {
+            color: red;
+        }
+
+        span:hover {
+            color: rgb(22, 171, 171);
+        }
+
+        .logo {
+            margin-left: 40px;
+            margin-bottom: 20px;
+        }
+
+        .logo:hover {
+            font-size: x-large;
+            font-style: italic;
+            color: red;
+        }
+
+        
+
+        button {
+            /* margin-top: 50px; */
+            color: aliceblue;
+            width: 250px;
+            background-color: #6184a8;
+            /* border-radius: 40%; */
+            border-style: hidden;
+            font-size: xx-large;
+        }
+
+        button:hover {
+            background-color: skyblue;
+            color: red;
+            font-size: xx-large;
+            /* transform: rotatey(30deg); */
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .cards {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .card {
+            margin: 40px 40px 0px 40px;
+            position: relative;
+            max-width: 250px;
+            max-height: 350px;
+            box-shadow: 0 40px 60px -6px black;
+        }
+
+        .card-title {
+            display: block;
+            text-align: center;
+            color: #fff;
+            background-color: #6184a8;
+            padding: 2%;
+            border-top-right-radius: 4px;
+            border-top-left-radius: 4px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 98%;
+            object-fit: cover;
+            display: block;
+            position: relative;
+        }
+
+        .card-desc {
+            display: block;
+            font-size: 1.2rem;
+            position: absolute;
+            height: 0;
+            top: 0;
+            opacity: 0;
+            padding: 15px 8%;
+            background-color: white;
+            overflow-y: scroll;
+            transition: 0.8s ease;
+        }
+
+        .card:hover .card-desc {
+            opacity: 1;
+            height: 100%;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            color: #fff;
+            margin: 40px 0 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navigation">
+        <div class="logo">
+            <h1><span>AR</span>PAN <span>.</span></h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href=""> skills </a></li>
+                <li><a href=""> Education </a></li>
+                <li><a href=""> Experience</a></li>
+                <li><a href=""> Projects </a></li>
+                <li><a href=""> Contact </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="skills">
+        <h1>My Knowledge</h1>
+        <div class="cards">
+            <div class="card">
+                <h2 class="card-title">Web-Development</h2>
+                <img src="./img/webdev.png" alt="">
+                <p class="card-desc">My Knowledge in Web-Development are in HTML , CSS, JavaScript, responsive design,
+                    Bootstrap, PHP, MySQL, Git, front-end, back-end, hosting, domain</p>
+                <!-- <br> -->
+                <button>Learn More</button>
+                <!--  debugging, browser compatibility, frameworks, MVC, AJAX, JSON, SASS, npm, CLI.CMS, WordPress, SEO, UX/UI, mobile-friendly,REST API, -->
+            </div>
+            <div class="card">
+                <h2 class="card-title">Coding</h2>
+                <img src="./img/CODING.jpg" alt="">
+                <p class="card-desc">My Knowledge in Coding are in c , Python, Java, C++, JavaScript, HTML, CSS, SQL,
+                    Git, data structures, algorithms,
+                    object-oriented programming, recursion,
+                    loops, conditional statements, error handling, variables, functions.</p>
+                    <button>Learn More</button>
+                <!-- file handling, version control,functional programming, API, JSON, debugging, testing, web scraping,
+                machine learning, regular expressions, command line, IDE, -->
+            </div>
+            <div class="card">
+                <h2 class="card-title">Design</h2>
+                <img src="./img/design.jpg" alt="">
+                <p class="card-desc">My Knowledge in Design is mainly in UI/UX using Figma</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
